@@ -1,0 +1,39 @@
+main#spapp > section { display: none; } 
+main#spapp > section:last-child { display: block; } 
+@keyframes appear { from { width:0; opacity:0; } to { width:100%; opacity:1; } } 
+main#spapp > section:target { display: block; animation: appear 0.1s linear 1; } 
+main#spapp > section:target ~ * { display: none; }
+main#spapp > section { padding:60px 10px 10px 10px; background:#ffffff; }  
+main#spapp > section#view_2 { background:#90caf9; }  
+main#spapp > section#view_3 { background:#a5d6a7; } 
+main#spapp > section#error_404 { background:#b71c1c; color:#fff; }
+main#spapp h1 { font-size: 4.2rem; line-height: 110%; margin: 2.1rem 0 1.68rem 0; text-align:center; }
+/* style.css */
+main#spapp > section {
+  display: none; /* Hide all sections by default */
+}
+
+main#spapp > section:target {
+  display: block; /* Show active section */
+}
+/* style.css */
+main#spapp > section {
+  display: none; /* Hide all sections by default */
+}
+
+main#spapp > section#home {
+  display: block; /* Show home by default */
+}
+
+main#spapp > section:target {
+  display: block; /* Show active section */
+}/* Hide all sections by default */
+main#spapp > section {
+  display: none;
+}
+
+/* Show active section */
+main#spapp > section:target,
+main#spapp > section#home {
+  display: block;
+}
